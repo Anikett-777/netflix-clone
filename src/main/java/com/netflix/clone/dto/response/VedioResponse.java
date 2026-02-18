@@ -74,7 +74,7 @@ public class VedioResponse {
                 vedio.isInWatchlist()
         );
 
-        if(vedio.isInWatchlist()!= false){
+        if(vedio.isInWatchlist()){
             response.setInWatchList(vedio.isInWatchlist());
         }
         return response;

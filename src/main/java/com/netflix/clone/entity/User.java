@@ -3,10 +3,7 @@ package com.netflix.clone.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.netflix.clone.enums.Role;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -20,6 +17,7 @@ import java.util.Set;
 @Setter
 @ToString
 @AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @Id
