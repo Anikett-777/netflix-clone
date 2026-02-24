@@ -67,8 +67,8 @@ public class User {
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "user_watchlist",
-            joinColumns = @JoinColumn(name = "user_email"),
-            inverseJoinColumns = @JoinColumn(name = "vedio_id")
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "video_id")
     )
     private Set<Vedio> watchlist=new HashSet<>();
 
